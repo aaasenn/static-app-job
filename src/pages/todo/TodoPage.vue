@@ -4,7 +4,6 @@
 
 <script setup lang="ts">
 import CreateTodo from 'features/create-todo/ui/CreateTodo.vue';
-
 </script>
 
 <style scoped>

@@ -4,7 +4,12 @@
     <SearchInput
       ref="inputRef"
       v-model="searchValue" />
-    <Button @click="handleClick">
+    <div class="border border-red-900">
+      Hello
+    </div>  
+    <Button
+      class="border border-red-900"
+      @click="handleClick">
       Добавить дело
     </Button>
     <TodoItem

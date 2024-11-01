@@ -1,17 +1,29 @@
 <script setup lang="ts">
-import Button from 'shared/ui/Button/Button.vue';
-import VueMasteryForm from './pages/VueMasteryForm/VueMasteryForm.vue';
-import TodoPage from './pages/todo/TodoPage.vue';
+import CreateTodo from 'features/create-todo/ui/CreateTodo.vue';
 import { PageMainContent } from './shared/layouts';
+import HeaderSvg from 'shared/assets/images/bg-header-desktop.svg'
+import MainPage from 'shared/layouts/page/MainPage.vue';
 
 </script>
 
 <template>
-  <PageMainContent>
-    <TodoPage />
-  </PageMainContent>
+  <div class="bg-teal-50">
+    <MainPage>
+      <HeaderSvg
+        fill="red"
+        class="header bg-teal-100" />
+      <PageMainContent>
+        Hello world
+      </PageMainContent>
+    </MainPage>
+  </div>
 </template>
 
 <style scoped>
-
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 </style>

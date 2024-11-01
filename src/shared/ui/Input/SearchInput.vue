@@ -1,6 +1,10 @@
 <template>
   <div>
-    <input type="text" v-model="modelValue" class="container" ref="inputRef"/>
+    <input
+      ref="inputRef"
+      v-model="modelValue"
+      type="text"
+      class="container">
   </div>
 </template>
 
