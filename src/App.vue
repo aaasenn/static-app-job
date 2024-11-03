@@ -1,19 +1,17 @@
 <script setup lang="ts">
-import CreateTodo from 'features/create-todo/ui/CreateTodo.vue';
-import { PageMainContent } from './shared/layouts';
+import { PageMainContent } from './shared/layouts'
 import HeaderSvg from 'shared/assets/images/bg-header-desktop.svg'
-import MainPage from 'shared/layouts/page/MainPage.vue';
-
+import MainPage from 'shared/layouts/page/MainPage.vue'
+import AppJobs from 'pages/app-jobs/ui/AppJobs.vue'
 </script>
 
 <template>
   <div class="bg-teal-50">
     <MainPage>
-      <HeaderSvg
-        fill="red"
-        class="header bg-teal-100" />
+      <HeaderSvg fill="red" class="header bg-teal-100" />
       <PageMainContent>
         Hello world
+        <AppJobs />
       </PageMainContent>
     </MainPage>
   </div>
