@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { BaseButton } from '../BaseButton'
-import { BaseButtonProps } from '../BaseButton'
+import type { BaseButtonProps } from '../BaseButton'
 import { ref } from 'vue'
 
 const props = defineProps<BaseButtonProps>()
@@ -13,7 +13,8 @@ const submitBaseClasses = [
   'py-2',
   'rounded',
   'cursor-pointer',
-  'bg-teal-600'
+  'bg-teal-600',
+  'text-teal-50'
 ]
 
 const submitHoverClasses = [
