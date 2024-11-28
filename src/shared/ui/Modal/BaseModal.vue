@@ -31,7 +31,7 @@ useHideOnOverlayClick({ enabled: true, onClose: handleOverlayClick })
       class="absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-25 flex justify-center items-center"
     >
       <div ref="contentModalRef" class="fixed bg-white rounded py-4 px-3">
-        <h2 class="m-0">{{ title }}</h2>
+        <h2 class="m-0 mb-4">{{ title }}</h2>
         <slot />
       </div>
     </div>

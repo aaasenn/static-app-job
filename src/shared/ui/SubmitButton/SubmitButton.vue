@@ -14,7 +14,8 @@ const submitBaseClasses = [
   'rounded',
   'cursor-pointer',
   'bg-teal-600',
-  'text-teal-50'
+  'text-teal-50',
+  'h-[32px]'
 ]
 
 const submitHoverClasses = [

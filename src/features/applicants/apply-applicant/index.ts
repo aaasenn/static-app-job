@@ -1,0 +1,1 @@
+export { default as ApplyApplicant } from './ui/ApplicantModal/ApplicantModal.vue'

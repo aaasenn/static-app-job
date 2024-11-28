@@ -22,7 +22,7 @@ export default {
         },
         text: {
           primary: gray[800],
-          secondary: gray[600],
+          secondary: gray[400],
         },
       }
     },
