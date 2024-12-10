@@ -10,7 +10,6 @@ import AppJobs from 'pages/app-jobs/ui/AppJobs.vue'
     <MainPage>
       <HeaderSvg fill="red" class="header bg-teal-100" />
       <PageMainContent>
-        Hello world
         <AppJobs />
       </PageMainContent>
     </MainPage>

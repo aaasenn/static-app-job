@@ -1,0 +1,1 @@
+export const mockedImg = "https://cdn-icons-png.freepik.com/256/8695/8695984.png?semt=ais_hybrid"

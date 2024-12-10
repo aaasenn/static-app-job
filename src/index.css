@@ -42,6 +42,14 @@ select {
   background-color: none;
 }
 
+textarea {
+  font: inherit;
+  border: 1px solid #ccc;
+  border-color: none;
+  box-shadow: none;
+  background-color:;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

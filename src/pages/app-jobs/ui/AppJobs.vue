@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ApplyApplicant } from 'features/applicants/apply-applicant'
+import PositionCard from 'entities/positions/ui/PositionCard/PositionCard.vue'
 </script>
 
 <template>
-  <ApplyApplicant />
+  <PositionCard :active="true" />
 </template>
 
 <style scoped></style>

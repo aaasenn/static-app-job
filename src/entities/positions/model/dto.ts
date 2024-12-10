@@ -1,6 +1,4 @@
-const POSSIBLE_LOCATIONS = ["USA", "UK", "Worldwide"];
-
-type LocationDto = typeof POSSIBLE_LOCATIONS[number];
+type LocationDto = "USA" | "UK" | "Worldwide";
 
 export interface PositionDTO {
   id: number,

@@ -10,10 +10,12 @@
     "lint": "eslint src"
   },
   "dependencies": {
+    "@vee-validate/zod": "^4.14.7",
     "node": "^22.10.0",
     "vee-validate": "^4.14.7",
     "vite-tsconfig-paths": "^5.0.1",
-    "vue": "^3.5.10"
+    "vue": "^3.5.10",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.12.0",
