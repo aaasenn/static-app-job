@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { PageMainContent } from './shared/layouts'
-import HeaderSvg from 'shared/assets/images/bg-header-desktop.svg'
-import MainPage from 'shared/layouts/page/MainPage.vue'
-import AppJobs from 'pages/app-jobs/ui/AppJobs.vue'
+  import { PageMainContent } from './shared/layouts'
+  import HeaderSvg from 'shared/assets/images/bg-header-desktop.svg'
+  import MainPage from 'shared/layouts/page/MainPage.vue'
+  import AppJobs from 'pages/app-jobs/ui/AppJobs.vue'
 </script>
 
 <template>
@@ -17,10 +17,10 @@ import AppJobs from 'pages/app-jobs/ui/AppJobs.vue'
 </template>
 
 <style scoped>
-.header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  .header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 </style>
