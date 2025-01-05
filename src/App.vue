@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { AppJobsPage } from 'pages/app-jobs'
-import { Flex } from 'shared/ui/Flex'
-import { Header } from 'shared/ui/Header'
+  import { AppJobsPage } from 'pages/app-jobs'
+  import { Flex } from 'shared/ui/Flex'
+  import { Header } from 'shared/ui/Header'
 </script>
 
 <template>
   <div class="bg-teal-50">
-      <Flex
-      
+    <Flex
       column
       class="border border-solid border-orange-500 max-h-screen overflow-hidden"
     >
@@ -22,10 +21,10 @@ import { Header } from 'shared/ui/Header'
 </template>
 
 <style scoped>
-.header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  .header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 </style>
