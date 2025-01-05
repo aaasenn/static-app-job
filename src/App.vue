@@ -1,18 +1,23 @@
 <script setup lang="ts">
-import { PageMainContent } from './shared/layouts'
-import HeaderSvg from 'shared/assets/images/bg-header-desktop.svg'
-import MainPage from 'shared/layouts/page/MainPage.vue'
-import AppJobs from 'pages/app-jobs/ui/AppJobs.vue'
+import { AppJobsPage } from 'pages/app-jobs'
+import { Flex } from 'shared/ui/Flex'
+import { Header } from 'shared/ui/Header'
 </script>
 
 <template>
   <div class="bg-teal-50">
-    <MainPage>
-      <HeaderSvg fill="red" class="header bg-teal-100" />
-      <PageMainContent>
-        <AppJobs />
-      </PageMainContent>
-    </MainPage>
+      <Flex
+      
+      column
+      class="border border-solid border-orange-500 max-h-screen overflow-hidden"
+    >
+      <Header />
+      <div
+        class="h-max-full border border-solid border-red-600 overflow-scroll"
+      >
+        <AppJobsPage />
+      </div>
+    </Flex>
   </div>
 </template>
 

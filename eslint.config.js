@@ -1,19 +1,11 @@
-import js from '@eslint/js'
-import eslintPluginVue from 'eslint-plugin-vue'
-import ts from 'typescript-eslint'
-import eslintConfigPrettier from 'eslint-config-prettier'
+// @ts-check
 
-export default ts.config(
-  js.configs.recommended,
-  ...ts.configs.recommended,
-  ...eslintPluginVue.configs['flat/recommended'],
-  eslintConfigPrettier,
-  {
-    files: ['*.vue', '**/*.vue'],
-    languageOptions: {
-      parserOptions: {
-        parser: ts.parser
-      }
-    }
-  },
-)
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import vueslint from 'eslint-plugin-vue'
+
+export default tseslint.config(
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
+  vueslint.configs.recommended
+);

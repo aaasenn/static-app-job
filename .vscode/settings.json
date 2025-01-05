@@ -7,7 +7,9 @@
     "typescriptreact"
   ],
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   "eslint.lintTask.enable": true,
   "eslint.format.enable": true,
   "[vue]": {

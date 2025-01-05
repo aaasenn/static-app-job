@@ -20,6 +20,12 @@ const {
   languages = ['React', 'Java', 'Bash', 'Server Rendering']
 } = defineProps<Props>()
 
+const emits = defineEmits<{ (e: 'onChipClick', language: string): void }>()
+
+const handleChipClick = (language: string) => {
+  emits('onChipClick', language)
+}
+
 const positionFooterChips = computed(() => [postedAt, contract, location])
 </script>
 
@@ -53,9 +59,12 @@ const positionFooterChips = computed(() => [postedAt, contract, location])
 
       <!-- SECOND COLUMN -->
       <Flex justify="end" class="gap-3">
-        <Chip v-for="(language, index) in languages" :key="index">{{
-          language
-        }}</Chip>
+        <Chip
+          v-for="(language, index) in languages"
+          :key="index"
+          @click="() => handleChipClick(language)"
+          >{{ language }}</Chip
+        >
       </Flex>
     </div>
   </div>

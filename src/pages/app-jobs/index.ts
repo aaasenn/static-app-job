@@ -1,0 +1,1 @@
+export { default as AppJobsPage } from './ui/AppJobs.vue'
