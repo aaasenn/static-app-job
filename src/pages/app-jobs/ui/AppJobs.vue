@@ -1,31 +1,32 @@
 <script setup lang="ts">
-import { useQuery } from '@tanstack/vue-query'
-import { Flex } from 'shared/ui/Flex'
-import { getPositionsOptions } from 'entities/positions'
-import PositionCard from 'entities/positions/ui/PositionCard/PositionCard.vue'
-import { computed, reactive } from 'vue'
+  import { useQuery } from '@tanstack/vue-query'
+  import { Flex } from 'shared/ui/Flex'
+  import { getPositionsOptions } from 'entities/positions'
+  import PositionCard from 'entities/positions/ui/PositionCard/PositionCard.vue'
+  import { computed, reactive } from 'vue'
+  import { BaseButton } from 'shared/ui/BaseButton'
 
-const { data, isLoading } = useQuery({
-  ...getPositionsOptions
-})
+  const { data, isLoading } = useQuery({
+    ...getPositionsOptions
+  })
 
-const filters = reactive<Record<string, boolean>>({})
-const filtersList = computed(() => Object.keys(filters))
+  const filters = reactive<Record<string, boolean>>({})
+  const filtersList = computed(() => Object.keys(filters))
 
-const handleChipClick = (language: string) => {
-  if (filters[language]) {
-    delete filters[language]
-  } else {
-    filters[language] = true
+  const handleChipClick = (language: string) => {
+    if (filters[language]) {
+      delete filters[language]
+    } else {
+      filters[language] = true
+    }
   }
-}
 </script>
 
 <template>
   <div class="absolute border border-solid border-red-500">
     {{ filtersList.join(',') }}
   </div>
-  <Flex v-if="!isLoading" column class="h-full overflow-scroll">
+  <Flex v-if="!isLoading" column class="h-full">
     <PositionCard
       v-for="position in data"
       :key="position.id"
@@ -34,6 +35,7 @@ const handleChipClick = (language: string) => {
       @on-chip-click="handleChipClick"
     />
   </Flex>
+  <BaseButton label="privet" />
 </template>
 
 <style scoped></style>

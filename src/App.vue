@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { AppJobsPage } from 'pages/app-jobs'
+  import { ExitSessionButton } from 'features/auth/exit-session'
   import { Flex } from 'shared/ui/Flex'
   import { Header } from 'shared/ui/Header'
 </script>
@@ -10,11 +10,11 @@
       column
       class="border border-solid border-orange-500 max-h-screen overflow-hidden"
     >
-      <Header />
-      <div
-        class="h-max-full border border-solid border-red-600 overflow-scroll"
-      >
-        <AppJobsPage />
+      <Header>
+        <ExitSessionButton class="absolute border border-solid border-black" />
+      </Header>
+      <div class="h-max-full border border-solid border-red-600 overflow-auto">
+        <RouterView />
       </div>
     </Flex>
   </div>
